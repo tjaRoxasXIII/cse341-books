@@ -9,7 +9,7 @@ if (!PORT) {
 
 const startServer = async () => {
   try {
-    await connectToDb();
+      await connectToDb();
 
     app.listen(PORT, () => {
       console.log(`Server listening on port ${PORT}`);
