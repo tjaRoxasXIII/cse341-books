@@ -141,6 +141,7 @@ Required author fields:
 
 - id: string, required, custom id such as a1
 - name: string, required
+- birthYear: integer, reguired
 - Authors will continue to use custom string ids instead of MongoDB \_id values for route parameters.
 
 ### Routes
@@ -179,6 +180,7 @@ Request body:
 {
 "id": "a3",
 "name": "John Flanagan"
+"birthYear": 1944
 }
 
 Success:
@@ -198,7 +200,8 @@ Purpose: Update an existing author.
 Request body:
 
 {
-"name": "Updated Author Name"
+"name": "Updated Author Name",
+"birthYear": "Updated Author Birth Year"
 }
 Success:
 
